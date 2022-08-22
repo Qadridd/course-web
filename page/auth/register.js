@@ -9,7 +9,7 @@ const errorInner = document.getElementsByClassName('error')[0]
 const access_token = localStorage.getItem('access_token')
 
 if (access_token) {
-    window.location.href = "../profile/profile.html"
+    window.location.href = "../../index.html"
 }
 
 
@@ -33,7 +33,7 @@ async function register(event) {
 
     if (data?.access_token) {
         localStorage.setItem("access_token", JSON.stringify(data?.access_token))
-        window.location.href = "../profile/profile.html"
+        window.location.href = "../../index.html"
     }
 
 
